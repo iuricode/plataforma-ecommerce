@@ -25,11 +25,24 @@ ul {
   width: 100%;
   padding: 0.5% 0% 0.5% 0%;
   position: absolute;
+  justify-content: space-between;
   top: 0;
   z-index: 2;
   padding: 10px 40px;
   background-color: #454d72;
 }
+
+#baixarTemplate{
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 20px;
+  border-radius: 35px;
+  border:none;
+  background: rgb(100,94,190);
+  background: linear-gradient(90deg, rgba(100,94,190,1) 40%, rgb(29, 151, 175) 100%);
+}
+
 .btn-menu {
   width: 56px;
   height: 56px;
@@ -62,6 +75,7 @@ ul {
   display: none;
 }
 .menu ul {
+ 
   text-align: center;
   width: 100%;
   float: left;
@@ -70,6 +84,7 @@ ul {
   padding: 3%;
 }
 .menu li a {
+  margin: -10px;
   color: #fff;
   font-size: 1.5em;
   padding: 1.5% 3%;
