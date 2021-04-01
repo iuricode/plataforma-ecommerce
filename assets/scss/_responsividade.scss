@@ -1,0 +1,423 @@
+@media screen and (max-width: 1300px){
+    html{
+        font-size: 14px;
+    }
+    header{
+        .larguraContainer{
+            nav{
+                ul{
+                    display: none;
+                }
+                span{
+                    display: none;
+                }
+                #div-mobile{
+                    display: inherit;
+                    width: 100%;
+                    @include FlexBox();
+                    #menu{
+                        width: 30px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+            #banner{
+                article{
+                    span{
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    button{
+                        width: 100%;
+                    }
+                    ul{
+                        text-align: center;
+                        justify-content: center;
+                        li{
+                            width: 33%;
+                            margin-right: 0px;
+                            margin-bottom: 10px;
+                            a{
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1250px){
+    header{
+    padding: 0px 35px;
+    .larguraContainer{
+        #banner{
+            flex-direction: column-reverse;
+            text-align: center;
+            padding-top: 20px;
+                article{
+                    width: 100%;
+                    h2{
+                        font-size: 2.7rem;
+                        line-height: 40px;
+                        margin: 0 auto 20px auto;
+                    }
+                    p{
+                        margin: 0 auto 20px auto;
+                    }
+                    span{
+                        input{
+                            width: 100%;
+                        }
+                        button{
+                            margin-top: 15px;
+                            width: 100%;
+                        }
+                    }
+                    ul{
+                        text-align: center;
+                        justify-content: center;
+                        li{
+                            justify-content: center;
+                            width: 33%;
+                            margin-right: 0px;
+                            margin-bottom: 10px;
+                            a{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    #descricao-input{
+                        padding: 0px 40px;
+                        font-size: 1rem;
+                    }
+                }
+                article:nth-child(2){
+                    display: flex;
+                    flex-direction: row-reverse;
+                    #ilustracao{
+                        padding-left: 0px;
+                        margin: 0 auto 30px auto;
+                    }
+                }
+        }
+        #empresas{
+            display: none;
+        }
+    }
+}
+
+main #colabore{
+    padding: 50px 35px;
+    .larguraContainer{
+        h2{
+            font-size: 2rem;
+            max-width: 70%;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+        #image-desktop{
+            display: none;
+        }
+        #image-mobile{
+            display: inherit;
+        }
+        div{
+            padding: 0px;
+            article{
+                width: 100%;
+                div{
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        button{
+            width: 100%;
+        }
+    }
+}
+
+main #performance{
+    padding: 50px 35px;
+    .larguraContainer{
+        #analise{
+            div{
+                text-align: center;
+                width: 100%;
+                h2{
+                    font-size: 2rem;
+                    line-height: 40px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 1.2rem;
+                    max-width: 500px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+        #custos{
+            flex-direction: column-reverse;
+            div{
+                text-align: center;
+                width: 100%;
+                h2{
+                    font-size: 2rem;
+                    line-height: 40px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 1.2rem;
+                    max-width: 500px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
+
+main #gerencie{
+    padding: 50px 35px;
+    .larguraContainer{
+        h2{
+            font-size: 2rem;
+            max-width: 80%;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+        article{
+            div{
+                width:100%;
+                margin-bottom: 20px;
+                ul{
+                    display: none;
+                }
+            }
+            .image-desktop{
+                display: none;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
+
+main #depoimentos{
+    padding: 50px 35px;
+    background-color: $corTexto;
+    color: #fff;
+    .larguraContainer{
+        h2{
+            font-size: 2rem;
+            max-width: 100%;
+            margin: 0 auto 30px auto;
+            line-height: 30px;
+        }
+        article{
+            div{
+                width: 100%;
+                h3{
+                    font-size: 1.7rem;
+                    letter-spacing: 1px;
+                    line-height: 33px;
+                }
+                h5{
+                    font-weight: 500;
+                }
+                p{
+                    max-width: 90%;
+                }
+            }
+            img{
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+main #saiba-mais{
+    padding: 50px 35px;
+    .larguraContainer{
+        h2{
+            font-size: 2rem;
+            max-width: 100%;
+            margin: 0 auto 30px auto;
+            line-height: 30px;
+        }
+        div{
+            article{
+                margin: 10px;
+                width: calc(50% - 20px);
+                h3{
+                    min-height: 100px;
+                }
+            }
+        } 
+    }
+}
+
+main #email{
+    padding: 50px 35px 0px 35px;
+    .larguraContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        h2{
+            font-size: 2rem;
+            max-width: 80%;
+            margin: 0 auto 30px auto;
+            line-height: 30px;
+        }
+        span{
+            margin-top: 30px;
+            display: flex;
+            #email1{
+                position: static;
+                width: 50%;
+            }
+            #email2{
+                width: 40%;
+                right: 35px;
+            }
+        }
+        div{
+            span{
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 100%;
+                }
+                button{
+                    margin-top: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+main #separador{
+    .larguraContainer{
+        display: none;
+    }
+}
+
+main #sub-footer{
+    text-align: center;
+    padding: 50px 35px 20px 35px;
+    background-color: $corBg;
+    .larguraContainer{
+        ul{
+            width: 100%;
+            margin-bottom: 40px;
+            padding-left: 0px;
+            img{
+                margin-bottom: 40px;
+            }
+            h2{
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            li{
+                margin: 10px 0px;
+                font-size: 1.1rem;
+                color: #000;
+            }
+        }
+    }
+}
+
+#divisao-hr{
+    display: none;
+}
+    
+footer{
+    padding: 35px;
+    text-align: center;
+    background-color: $corBg;
+    padding-top: 0px;
+    .larguraContainer{
+        justify-content: center;
+        span{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            p{
+                font-size: 1.2rem;
+                margin-right: 0px;
+            }
+            p:nth-child(1){
+                margin-bottom: 10px;
+            }
+            span{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .fa{
+                    font-size: 1.6rem;
+                    margin: 50px 20px;
+                }
+            }
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 950px){
+    main #saiba-mais{
+        .larguraContainer{
+            div{
+                article{
+                    margin: 10px;
+                    width: calc(100% - 20px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    header{
+        .larguraContainer{
+            #banner{
+                article{
+                    ul{
+                        li{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

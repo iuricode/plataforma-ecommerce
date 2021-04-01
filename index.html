@@ -1,245 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onepage empresa</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/scss/styles.css">
     <!--Ícones do Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
-
 <body>
-
-    <section id="menu-todo">
-    
-        <h1 class="logo">logo.</h1>
-
-        <div class="btn-menu"><i class="fa fa-bars"></i></div>
-        <!--Menu-->
-        <nav class="menu">
-            <a class="btn-close"><i class="fa fa-close"></i></a>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#servicos">services</a></li>
-                <li><a href="#valores">prices</a></li>
-                <li><a href="#email">contact</a></li>
-               
-            </ul>
-        </nav>
-    </section>
-
     <header>
-        <div id="redes-sociais">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-google-plus"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <div id="linha"></div>
+        <div class="larguraContainer">
+            <nav>
+                <div id="div-mobile">
+                    <img src="assets/image/logo-footer.svg" alt="">
+                    <div id="menu">
+                        <div class="nav">
+                            <div class="nav-toggle">
+                                <span></span> 
+                            </div>
+                            <li><a href="#">Funcionalidades</a></li>
+                            <li><a href="#">Assinar</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Carreira</a></li>
+                            <li><a href="#">Login</a></li>
+                            <button>Criar conta grátis</button>
+                      </div>
+                    </div>
+                </div>
+                <ul>
+                    <img src="assets/image/logo.svg" alt="Logo da empresa" id="logo-header">
+                    <li><a href="#">Funcionalidades</a></li>
+                    <li><a href="#">Assinar</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Carreira</a></li>
+                </ul>
+                <span>
+                    <li><a href="#">Login</a></li>
+                    <button>Criar conta grátis</button>
+                </span>
+            </nav>
+
+            <section id="banner">
+                <article>
+                    <h2>Ganhe tempo organizando suas atividades corretamente</h2>
+                    <p>O Gipo te ajuda a agilizar seus projetos, com recursos que se ajustam a qualquer estilo.</p>
+                    <span>
+                        <input class="campo-input" type="email" placeholder="Digite seu email" /> 
+                        <button>Começar Grátis</button>
+                    </span>
+                    <p id="descricao-input">Ao criar a conta, você aceitará os termos e condições do site</p>
+                    <ul>
+                        <li><img src="assets/image/estrela.svg" alt=""><a href="#">Kanban de tarefas</a></li>
+                        <li><img src="assets/image/estrela.svg" alt=""><a href="#">Controle de Tempo</a></li>
+                        <li><img src="assets/image/estrela.svg" alt=""><a href="#">Chat interno</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <img src="assets/image/ilustracao-header.png" alt="" id="ilustracao">
+                </article>
+            </section>
+
+            <section id="empresas">
+                <article>
+                    <img src="assets/image/empresa1.svg" alt="">
+                    <img src="assets/image/empresa2.svg" alt="">
+                    <img src="assets/image/empresa3.svg" alt="">
+                    <img src="assets/image/empresa4.svg" alt="">
+                </article>
+            </section>
         </div>
-
-        <article>
-            <h2>social<br> media for business</h2>
-            <p>perfomance based social media agency<br> we are lorem media</p>
-            <button>get a free audit</button>
-        </article>
-        <!--Imagem de fundo-->
-        <img src="assets/image/fundo-menu.png" alt="" id="fundo-menu">
-
-        <!--Imagem do mouse-->
-        <img src="assets/image/mouse.png" alt="" id="botao-mouse">
-
     </header>
 
-    <section id="sobre">
-        <article id="sobre-image">
-            <img src="assets/image/image-sobre.png" alt="" id="image-sobre">
-        </article>
-
-        <article id="sobre-texto">
-            <div>
-                <h3>Biography</h3>
-                <h2>Who We Are</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae recusandae obcaecati reiciendis
-                    praesentium exercitationem quas nam delectus unde, hic, alias laborum voluptatum nobis earum
-                    commodi,
-                    saepe nulla enim quo dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-                    recusandae
-                    obcaecati reiciendis alias laborum voluptatum nobis earum commodi, saepe nulla enim quo dolorum.</p>
-                <button>see more</button>
+    <main>
+        <section id="colabore">
+            <div class="larguraContainer">
+                <h2>Colabore online com Gipo</h2>
+                <p>Aprove tarefas, analise os custos do projeto, entenda a perfomance do seu time, tudo em um espaço compartilhado. Veja seu projeto da maneira que quiser.</p>
+                <img src="assets/image/kanban.svg" alt="" id="image-desktop">
+                <img src="assets/image/image-mobile.svg" alt="" id="image-mobile">
+                <div>
+                    <article id="card-kanban">
+                        <div>
+                            <img src="assets/image/card-kanban.svg" alt="">
+                        </div>
+                        <h3>Kanban de Tarefas</h3>
+                        <p>Visualize o trabalho, limite o trabalho em andamento e maximize a eficiência. Tenha uma melhoria constante do fluxo e qualidade do seus projetos. </p>
+                    </article>
+                    <article id="card-colaboracao">
+                        <div>
+                            <img src="assets/image/card-colaboracao.svg" alt="">
+                        </div>
+                        <h3>Colaboração Online</h3>
+                        <p>Organize e colabore em tempo real com o seu time. Faça comentários e planejamentos. Delegue tarefas e defina datas de entrega para os projetos com o seu time.</p>
+                    </article>
+                </div>
+                <button>Crie sua conta grátis</button>
             </div>
-        </article>
-    </section>
+        </section>
 
-    <section id="servicos">
-        <div id="titulo">
-            <h3>our services</h3>
-            <h2>what we offer</h2>
-        </div>
+        <section id="gerencie">
+            <div class="larguraContainer">
+                <h2>Gerencie o projeto do seu jeito</h2>
+                <p>Faça tudo de forma automatizada, verifique métricas, transforme quadros em calendários e cronogramas,  mude datas e responsáveis por tarefas e mais.</p>
+                <article>
+                    <div>
+                        <div>
+                            <h3>Kanban de tarefas</h3>
+                            <p>Gerencie processos e todos integrantes da equipe. Implemente sua metodologia Kanban com as ferramentas do Gipo.</p>
+                        </div>
+                        <ul>
+                            <li>Timetracker</li>
+                            <li>Gestão de Projetos</li>
+                            <li>Painel pessoal</li>
+                            <li>Gráfico Gannt</li>
+                            <li>Aprovação de tarefas</li>
+                        </ul>
+                    </div>
+                    <img src="assets/image/gerencie.svg" alt="" class="image-desktop">
+                </article>
+                <button>Crie sua conta grátis</button>
+            </div>
+        </section>
 
-        <div id="separacao">
-            <article>
+        <section id="performance">
+            <div class="larguraContainer">
+                <article id="analise">
+                    <div>
+                        <h2>Performance e  Análise</h2>
+                        <p>Concentre-se em seu negócio principal, aumente sua produtividade e deixe o trabalho administrativo conosco.</p>
+                        <p>Melhore a alocação do seu time e cultive a confiança do cliente incluindo relatórios de tempo nas faturas.</p>
+                    </div>
+                    <img src="assets/image/analise.svg" alt="">
+                </article>
+                <article id="custos">
+                    <img src="assets/image/custos.svg" alt="">
+                    <div>
+                        <h2>Custos e Despesas</h2>
+                        <p>Monitore a saúde dos projetos na empresa acompanhando indicadores de andamento, esforço e custos.</p>
+                        <p>Confira todas as informações importantes para assegurar a rentabilidade e eficiência de todo trabalho executado.</p>
+                        <p>Tudo em tempo real, conectado, em qualquer lugar e qualquer hora.</p>
+                    </div>
+                </article>
+                <button>Crie sua conta grátis</button>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <div class="larguraContainer">
+                <h2>O que estão falando</h2>
+                <article>
+                    <div>
+                        <h3>“Nós automatizamos muitos de nossos processos cotidianos. Agora podemos dedicar mais tempo aos trabalhos que requerem nosso talento.”</h3>
+                        <h5>Samyuktha Shivakumar</h5>
+                        <p>Chefe de Operações de Marketing Global, ThoughtWorks</p>
+                        <span>
+                            <ul>
+                                <li class="ativo"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul id="setas">
+                                <i class="fa fa-angle-left"></i>
+                                <i class="fa fa-angle-right"></i>
+                            </ul>
+                        </span>
+                    </div>
+                    <img src="assets/image/mulher.svg" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section id="saiba-mais">
+            <div class="larguraContainer">
+                <h2>Saiba mais com o Gipo</h2>
                 <div>
-                    <img src="assets/image/001-process.png" alt="">
-                </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
+                    <article>
+                        <img src="assets/image/card-saiba-mais1.svg" alt="">
+                        <div>
+                            <ul>
+                                <img src="assets/image/tag.svg" alt="">
+                                <li>Produtividade</li>
+                            </ul>
+                        </div>
+                        <h3>Como identificar os sintomas de estresse no trabalho</h3>
+                        <div class="data-post">
+                            <span>
+                                <img src="assets/image/icon.svg" alt="">
+                                <p>Equipe Gipo</p>
+                            </span>
+                            <p>18 de Setembro, 2020</p>
+                        </div>
+                    </article>
 
-            <article>
+                    <article>
+                        <img src="assets/image/card-saiba-mais2.svg" alt="">
+                        <div>
+                            <ul>
+                                <img src="assets/image/tag.svg" alt="">
+                                <li>Produtividade</li>
+                            </ul>
+                        </div>
+                        <h3>Estresse no trabalho? 4 técnicas poderosas para relaxar e ter foco</h3>
+                        <div class="data-post">
+                            <span>
+                                <img src="assets/image/icon.svg" alt="">
+                                <p>Equipe Gipo</p>
+                            </span>
+                            <p>7 de Setembro, 2020</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="assets/image/card-saiba-mais3.svg" alt="">
+                        <div>
+                            <ul>
+                                <img src="assets/image/tag.svg" alt="">
+                                <li>Produtividade</li>
+                            </ul>
+                        </div>
+                        <h3>Como organizar projetos visualmente usando o software Kanban</h3>
+                        <div class="data-post">
+                            <span>
+                                <img src="assets/image/icon.svg" alt="">
+                                <p>Equipe Gipo</p>
+                            </span>
+                            <p>31 de Agosto, 2020</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="email">
+            <div class="larguraContainer">
+                <span>
+                    <img src="assets/image/email1.svg" alt="" id="email1">
+                    <img src="assets/image/email2.svg" alt="" id="email2">
+                </span>
                 <div>
-                    <img src="assets/image/002-social-media.png" alt="">
+                    <h2>Comece grátis com o Gipo</h2>
+                    <p>Um plataforma completa para toda a sua equipe trabalhar de maneira organizada e totalmente produtiva</p>
+                    <span>
+                        <input type="text" placeholder="Digite seu email">
+                        <button>Começar Grátis</button>
+                    </span>
                 </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
+            </div>
+        </section>
 
-            <article>
-                <div>
-                    <img src="assets/image/003-responsive.png" alt="">
-                </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
+        <div id="separador"></div>
+    
+        <section id="sub-footer">
+            <div class="larguraContainer">
+                <ul>
+                    <img src="assets/image/logo-footer.svg" alt="">
+                    <h3>Login</h3>
+                    <h3>Criar conta grátis</h3>
+                </ul>
+                <ul>
+                    <h2>Funcionalidades</h2>
+                    <li>Timetracker</li>
+                    <li>Gestão de Projetos</li>
+                    <li>Gestão de Tarefa</li>
+                    <li>Planejamento flexível</li>
+                </ul>
+                <ul>
+                    <h2>Assinar</h2>
+                    <li>Premium</li>
+                    <li>Teste gratuito</li>
+                    <li>Como funciona</li>
+                </ul>
+                <ul>
+                    <h2>Sobre</h2>
+                    <li>Quem somos</li>
+                    <li>Imprensa</li>
+                    <li>Clientes</li>
+                    <li>Fale Conosco</li>
+                </ul>
+                <ul>
+                    <h2>Carreira</h2>
+                    <li>Vagas</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-            <article>
-                <div>
-                    <img src="assets/image/004-analysis.png" alt="">
-                </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
-
-            <article>
-                <div>
-                    <img src="assets/image/005-social-media.png" alt="">
-                </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
-
-            <article>
-                <div>
-                    <img src="assets/image/006-computer.png" alt="">
-                </div>
-                <h2>social media management</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo, numquam voluptatem excepturi nostrum, velit nobis.</p>
-                <button>see more</button>
-            </article>
-        </div>
-    </section>
-
-    <section id="valores">
-        <h3>Pricing</h3>
-        <h2>Our Pricing</h2>
-        <div>
-            <article>
-                <h2>gold packge</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo.</p>
-                <h3>$ 000</h3>
-                <button>see details</button>
-            </article>
-
-            <article>
-                <h2>platinum package</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo.</p>
-                <h3>$ 000</h3>
-                <button id="ativo">see details</button>
-            </article>
-
-            <article>
-                <h2>silver package</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic sequi, officiis neque accusamus eos
-                    minus quo.</p>
-                <h3>$ 000</h3>
-                <button>see details</button>
-            </article>
-        </div>
-        <article id="bolinhas">
-            <div></div>
-            <div></div>
-            <div id="bolinha-maior"></div>
-        </article>
-    </section>
-
-    <section id="email">
-        <h3>Newsletter</h3>
-        <h2>Do you want to get <span>Spacial News?</span></h2>
-
-        <div>
-            <input type="email" placeholder="Drop Your Email">
-            <button>subscribe</button>
-        </div>
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#7d76f8" fill-opacity="1"
-            d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-    </svg>
+    <div id="divisao-hr">
+        <hr>
+    </div>
 
     <footer>
-        <article>
-            <div id="footer-sobre">
-                <h1>logo.</h1>
-                <h2>Stay on touch</h2>
-                <ul>
+        <div class="larguraContainer">
+            <span>
+                <p>Termos de uso</p>
+                <p>Política de Privacidade</p>
+                <span>
                     <i class="fa fa-facebook"></i>
-                    <i class="fa fa-google-plus"></i>
                     <i class="fa fa-twitter"></i>
-                    <i class="fa fa-instagram"></i>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Office</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Hours</h3>
-                <ul>
-                    <li><a href="#">Monday: 9:00 - 18:00</a></li>
-                    <li><a href="#">Tuesday: 9:00 - 18:00</a></li>
-                    <li><a href="#">Wednesday: 9:00 - 18:00</a></li>
-                    <li><a href="#">Thursday: 9:00 - 18:00</a></li>
-                    <li><a href="#">Friday: 9:00 - 18:00</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Contact</h3>
-                <ul>
-                    <li><i class="fa fa-phone"></i><a href="#">000-000-0000</a></li>
-                    <li><i class="fa fa-envelope"></i><a href="#">info@email.com</a></li>
-                    <li><i class="fa fa-map-marker"></i><a href="#">New York, US</a></li>
-                </ul>
-            </div>
-        </article>
+                </span>
+            </span>
+            <p>Copyright © 2020 Avocode</p>
+        </div>
     </footer>
-    <!--Jquery para o menu e scroll-->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
 
+    <script src="assets/js/script.js"></script>
+
+</body>
 </html>
