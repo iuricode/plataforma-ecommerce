@@ -182,6 +182,37 @@ header .larguraContainer nav ul li a {
   transition: all 0.1s ease;
 }
 
+header .larguraContainer nav ul li a {
+  color: #202020;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+header .larguraContainer nav ul li a {
+  display: inline-block;
+  position: relative;
+  color: hsl(222, 25%, 14%);
+}
+
+header .larguraContainer nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #46F49A;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+header .larguraContainer nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 header .larguraContainer nav span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +242,10 @@ header .larguraContainer nav span button {
   font-weight: 500;
   font-size: 1rem;
   margin-left: 50px;
+}
+
+header .larguraContainer nav span button:hover {
+  background-color: #44D68A;
 }
 
 header .larguraContainer #banner {
@@ -318,6 +353,14 @@ header .larguraContainer #banner ul li {
 header .larguraContainer #banner ul li a {
   color: #202020;
   font-weight: 600;
+}
+
+header .larguraContainer #banner ul li a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+header .larguraContainer #banner ul li a:hover {
+  transform: translateX(4px);
 }
 
 header .larguraContainer #banner ul li img {
